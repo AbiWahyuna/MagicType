@@ -4,17 +4,25 @@ using TMPro;
 public class TypingSystem : MonoBehaviour
 {
     public TMP_InputField inputField;
+
+    public IsometricCharacterRenderer renderer; // drag di inspector
+
     public bool typingMode;
 
     public System.Action<string> OnSubmit;
 
     public IsometricPlayerMovementController moveController; // drag via inspector
 
+    public MagicCircle magicCircle; // drag prefab/instance ke sini
+    
+
+
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            // masuk mode mengetik
+            // MASUK MODE KETIK
             if (!typingMode)
             {
                 typingMode = true;
@@ -22,20 +30,33 @@ public class TypingSystem : MonoBehaviour
                 inputField.gameObject.SetActive(true);
                 inputField.ActivateInputField();
 
-                moveController.canMove = false; // ⛔ STOP GERAK
+                moveController.canMove = false;
+                renderer.PlayCasting();  // 🔥 MULAI ANIM CASTING
+
+                // magicCircle = reference ke MagicCircle di scene
+                
+                magicCircle.gameObject.SetActive(true);
+                magicCircle.Show();
+
             }
             else
             {
-                // selesai ngetik (benar/salah nanti dicek di SpellManager)
+                // KELUAR MODE KETIK + SUBMIT
                 typingMode = false;
                 string typed = inputField.text;
                 inputField.gameObject.SetActive(false);
 
-                moveController.canMove = true; // ✔️ BOLEH GERAK LAGI
+                magicCircle.Hide();
+                
+
+
+                moveController.canMove = true;
+                renderer.PlayIdleDown();  // ➡️ BALIK KE IDLE_DOWN
 
                 OnSubmit?.Invoke(typed);
             }
         }
     }
+
 
 }

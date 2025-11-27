@@ -72,4 +72,16 @@ public class IsometricCharacterRenderer : MonoBehaviour
         float stepCount = angle / step;
         return Mathf.FloorToInt(stepCount);
     }
+
+    //method animasi casting
+    public void PlayCasting()
+    {
+        animator.Play("Magic_Cast");
+    }
+
+    public void PlayIdleDown()
+    {
+        animator.Play("Idle_Down");
+    }
+
 }

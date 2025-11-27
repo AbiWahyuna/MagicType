@@ -56,6 +56,7 @@ public class Fireball : MonoBehaviour
     {
         if (col.CompareTag("Enemy"))
         {
+            Debug.Log("JOKOWI Terkena Damage +99999");
             // Damage musuh nanti
             Destroy(gameObject);
         }

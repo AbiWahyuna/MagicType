@@ -19,7 +19,8 @@ public class IsometricPlayerMovementController : MonoBehaviour
         if (!canMove)
         {
             rbody.velocity = Vector2.zero;
-            isoRenderer.SetDirection(Vector2.zero);
+            // HAPUS pemanggilan SetDirection di sini supaya animcasting nggak ketimpa
+            // isoRenderer.SetDirection(Vector2.zero);
             return;
         }
 
@@ -37,4 +38,5 @@ public class IsometricPlayerMovementController : MonoBehaviour
         Vector2 newPos = currentPos + movement * Time.fixedDeltaTime;
         rbody.MovePosition(newPos);
     }
+
 }

@@ -55,28 +55,17 @@ public class SpellManager : MonoBehaviour
 
     void Cast(Spell spell)
     {
-        Debug.Log($"Cast spell: {spell.spellName}");
+        GameObject go = Instantiate(spell.prefab, castPoint.position, Quaternion.identity);
 
-        if (playerAnimator != null)
-            playerAnimator.SetTrigger("Cast");
-
-        if (castPoint == null)
-        {
-            Debug.LogError("⚠️ castPoint belum diassign!");
-            return;
-        }
-
-        if (spell.prefab == null)
-        {
-            Debug.LogError($"⚠️ Prefab untuk spell `{spell.spellName}` belum dimasukkan!");
-            return;
-        }
-
-        Instantiate(spell.prefab, castPoint.position, Quaternion.identity);
+        Fireball fb = go.GetComponent<Fireball>();
+        if (fb != null)
+            fb.Init(Vector3.right); // atau arah default apapun
 
         isCasting = true;
         spellCooldownTimer = spell.cooldown;
     }
+
+
 
     public void Stun(float duration)
     {

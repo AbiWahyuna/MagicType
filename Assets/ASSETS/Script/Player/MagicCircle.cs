@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.Rendering.Universal;
 
 public class MagicCircle : MonoBehaviour
 {
@@ -8,15 +9,21 @@ public class MagicCircle : MonoBehaviour
     public float rotateSpeed = 30f;
     public float scaleDuration = 0.3f;
     public Transform rotatePivot; // ini RotatePivot
+    public Light2D circleLight;
+    private float baseLightRadius;
+
+
     private void Awake()
     {
         if (particles == null || particles.Length == 0)
             particles = GetComponentsInChildren<ParticleSystem>(true);
 
         transform.localScale = Vector3.zero;
+        baseLightRadius = circleLight != null ? circleLight.pointLightOuterRadius : 0f;
+
     }
 
-    
+
 
     void Update()
     {
@@ -56,6 +63,13 @@ public class MagicCircle : MonoBehaviour
             t += Time.deltaTime;
             transform.localScale = Vector3.Lerp(start, end, t / scaleDuration);
             yield return null;
+
+            if (circleLight != null)
+            {
+                circleLight.pointLightOuterRadius =
+                    Mathf.Lerp(from, to, t / scaleDuration) * baseLightRadius;
+            }
+
         }
 
         transform.localScale = end;

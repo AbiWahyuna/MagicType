@@ -56,9 +56,16 @@ public class Fireball : MonoBehaviour
     {
         if (col.CompareTag("Enemy"))
         {
-            Debug.Log("JOKOWI Terkena Damage +99999");
-            // Damage musuh nanti
+            EnemyHealth enemyHealth = col.GetComponentInParent<EnemyHealth>();
+
+            if (enemyHealth != null)
+            {
+                enemyHealth.TakeDamage(5f);
+                Debug.Log("Enemy kena 5 damage");
+            }
+
             Destroy(gameObject);
         }
     }
+
 }

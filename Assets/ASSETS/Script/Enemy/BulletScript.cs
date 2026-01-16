@@ -8,6 +8,8 @@ public class BulletScript : MonoBehaviour
     GameObject target;
     public float speed;
     Rigidbody2D bulletRB;
+    public float damage = 10f;
+
 
     // Start is called before the first frame update
     void Start()
@@ -19,9 +21,27 @@ public class BulletScript : MonoBehaviour
         Destroy(this.gameObject, 2);
     }
 
-   
-    void Update()
+
+
+
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.CompareTag("Player"))
+        {
+            HealthBar health = collision.GetComponentInChildren<HealthBar>();
+
+            if (health != null)
+            {
+                health.TakeDamage(damage);
+                Debug.Log("PLAYER KENA DAMAGE");
+            }
+            else
+            {
+                Debug.Log("HealthBar TIDAK KETEMU");
+            }
+
+            Destroy(gameObject);
+        }
     }
+
 }

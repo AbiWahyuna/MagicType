@@ -1,59 +1,61 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
     public Slider healthSlider;
+    public Slider easeHealthBar;
+
     public float maxHealth = 100f;
     public float health;
 
-    public Slider easeHealthBar;
-    private float lerpSpeed = 2f;
+    private float lerpSpeed = 5f;
 
-
-
-    // Start is called before the first frame update
     void Start()
     {
         health = maxHealth;
+
         healthSlider.maxValue = maxHealth;
-        healthSlider.value = health;
         easeHealthBar.maxValue = maxHealth;
+
+        healthSlider.value = health;
         easeHealthBar.value = health;
     }
 
-
-    // Update is called once per frame
     void Update()
     {
-        if(healthSlider.value != health)
-        {
-            healthSlider.value = health;
-        }
+        // Hard bar langsung
+        healthSlider.value = health;
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        // Smooth bar
+        if (Mathf.Abs(easeHealthBar.value - health) > 0.01f)
         {
-            takedamage(10f);
-        }
-
-       if(Mathf.Abs(easeHealthBar.value - healthSlider.value) > 0.1)
-       {
             easeHealthBar.value = Mathf.Lerp(
                 easeHealthBar.value,
-                healthSlider.value,
+                health,
                 Time.deltaTime * lerpSpeed
-                );
+            );
         }
         else
         {
-            easeHealthBar.value = healthSlider.value;
+            easeHealthBar.value = health;
         }
     }
 
-    void takedamage(float damage)
+    public void TakeDamage(float damage)
     {
         health -= damage;
+        health = Mathf.Clamp(health, 0, maxHealth);
+
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        // sementara
+        Destroy(gameObject);
     }
 }

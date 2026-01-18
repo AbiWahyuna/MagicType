@@ -57,9 +57,10 @@ public class SpellManager : MonoBehaviour
     {
         GameObject go = Instantiate(spell.prefab, castPoint.position, Quaternion.identity);
 
-        Fireball fb = go.GetComponent<Fireball>();
-        if (fb != null)
-            fb.Init(Vector3.right); // atau arah default apapun
+        //Fireball fb = go.GetComponent<Fireball>();
+        //Vector3 dir = playerAnimator.transform.right;
+        //fb.Init(dir);
+
 
         isCasting = true;
         spellCooldownTimer = spell.cooldown;

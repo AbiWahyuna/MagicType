@@ -1,54 +1,47 @@
-using UnityEngine;
-using UnityEngine.UIElements;
+﻿using UnityEngine;
 
 public class Fireball : MonoBehaviour
 {
     public float speed = 6f;
     public float lifeTime = 3f;
-    public float rotateSpeed = 4f;
 
     private Transform target;
-    private Vector3 direction; //arah awal 
+    private Vector3 direction;
 
-    private void Start()
+    void Start()
     {
         Destroy(gameObject, lifeTime);
 
-        //cari musuh terdekat
+        // cari enemy TERDEKAT SAAT LAHIR
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+
         float nearest = Mathf.Infinity;
+        Transform closest = null;
 
         foreach (GameObject e in enemies)
         {
-            float dist = Vector3.Distance(transform.position, e.transform.position);
+            float dist = Vector2.Distance(transform.position, e.transform.position);
             if (dist < nearest)
             {
                 nearest = dist;
-                target = e.transform;
+                closest = e.transform;
             }
         }
-    }
-    public void Init(Vector3 dir)
-    {
-        direction = dir.normalized;
+
+        if (closest != null)
+        {
+            target = closest;
+            direction = (target.position - transform.position).normalized;
+        }
+        else
+        {
+            // fallback kalau belum ada musuh
+            direction = transform.right;
+        }
     }
 
     void Update()
     {
-        if (target == null)
-        {
-            //tidak ada musuh = gerak lurus
-            transform.position += direction * speed * Time.deltaTime;
-            return;
-        }
-
-        //Arah menuju musuh
-        Vector2 toTarget = (target.position - transform.position).normalized;
-
-        //smooth rotate dari lurus lalu belok menuju musuh
-        direction = Vector3.Lerp(direction, toTarget, rotateSpeed * Time.deltaTime).normalized;
-
-        //Gerak magic
         transform.position += direction * speed * Time.deltaTime;
     }
 
@@ -56,16 +49,12 @@ public class Fireball : MonoBehaviour
     {
         if (col.CompareTag("Enemy"))
         {
-            EnemyHealth enemyHealth = col.GetComponentInParent<EnemyHealth>();
-
-            if (enemyHealth != null)
-            {
-                enemyHealth.TakeDamage(5f);
-                Debug.Log("Enemy kena 5 damage");
-            }
+            EnemyHealth eh = col.GetComponentInParent<EnemyHealth>();
+            if (eh != null)
+                eh.TakeDamage(5f);
 
             Destroy(gameObject);
+
         }
     }
-
 }

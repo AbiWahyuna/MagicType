@@ -3,60 +3,133 @@ using TMPro;
 
 public class TypingSystem : MonoBehaviour
 {
+    [Header("UI")]
     public TMP_InputField inputField;
 
-    public IsometricCharacterRenderer renderer; // drag di inspector
+    [Header("References")]
+    public IsometricCharacterRenderer renderer;
+    public IsometricPlayerMovementController moveController;
 
-    public bool typingMode;
+    [Header("Magic Circles")]
+    public MagicCircle fireCircle;
+    public MagicCircle iceCircle;
+
+    public bool typingMode = false;
+
+    // 🔑 mode terakhir yang VALID
+    private bool iceMode = false;
 
     public System.Action<string> OnSubmit;
 
-    public IsometricPlayerMovementController moveController; // drag via inspector
+    void Awake()
+    {
+        inputField.onValueChanged.AddListener(OnTypingChanged);
+    }
 
-    public MagicCircle magicCircle; // drag prefab/instance ke sini
-    
-
-
+    void OnDestroy()
+    {
+        inputField.onValueChanged.RemoveListener(OnTypingChanged);
+    }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (!typingMode && Input.GetKeyDown(KeyCode.Return))
         {
-            // MASUK MODE KETIK
-            if (!typingMode)
+            StartTyping();
+        }
+        else if (typingMode && Input.GetKeyDown(KeyCode.Return))
+        {
+            SubmitTyping();
+        }
+    }
+
+    void StartTyping()
+    {
+        typingMode = true;
+
+        inputField.text = "";
+        inputField.gameObject.SetActive(true);
+        inputField.ActivateInputField();
+
+        moveController.canMove = false;
+        renderer.PlayCasting();
+
+        // 🔥❄️ AKTIFKAN MODE TERAKHIR
+        if (iceMode)
+        {
+            if (fireCircle.gameObject.activeInHierarchy)
+                fireCircle.Hide();
+
+            iceCircle.gameObject.SetActive(true);
+            iceCircle.Show();
+        }
+        else
+        {
+            if (iceCircle.gameObject.activeInHierarchy)
+                iceCircle.Hide();
+
+            fireCircle.gameObject.SetActive(true);
+            fireCircle.Show();
+        }
+    }
+
+    // REAL-TIME SWITCH
+    void OnTypingChanged(string value)
+    {
+        if (!typingMode) return;
+
+        string typed = value.ToLower().Trim();
+
+        if (typed == "glaciafall")
+        {
+            if (!iceMode)
             {
-                typingMode = true;
-                inputField.text = "";
-                inputField.gameObject.SetActive(true);
-                inputField.ActivateInputField();
+                iceMode = true;
 
-                moveController.canMove = false;
-                renderer.PlayCasting();  // 🔥 MULAI ANIM CASTING
+                if (fireCircle.gameObject.activeInHierarchy)
+                    fireCircle.Hide();
 
-                // magicCircle = reference ke MagicCircle di scene
-                
-                magicCircle.gameObject.SetActive(true);
-                magicCircle.Show();
-
+                iceCircle.gameObject.SetActive(true);
+                iceCircle.Show();
             }
-            else
+        }
+        else if (typed == "fireball")
+        {
+            if (iceMode)
             {
-                // KELUAR MODE KETIK + SUBMIT
-                typingMode = false;
-                string typed = inputField.text;
-                inputField.gameObject.SetActive(false);
+                iceMode = false;
 
-                magicCircle.Hide();
-                
+                if (iceCircle.gameObject.activeInHierarchy)
+                    iceCircle.Hide();
 
-
-                moveController.canMove = true;
-                renderer.PlayIdleDown();  // ➡️ BALIK KE IDLE_DOWN
-
-                OnSubmit?.Invoke(typed);
+                fireCircle.gameObject.SetActive(true);
+                fireCircle.Show();
             }
         }
     }
 
+    void SubmitTyping()
+    {
+        typingMode = false;
 
+        string typed = inputField.text.ToLower().Trim();
+        inputField.gameObject.SetActive(false);
+
+        // 🔑 KUNCI MODE TERAKHIR DARI INPUT
+        if (typed == "glaciafall")
+            iceMode = true;
+        else if (typed == "fireball")
+            iceMode = false;
+
+        if (fireCircle.gameObject.activeInHierarchy)
+            fireCircle.Hide();
+
+        if (iceCircle.gameObject.activeInHierarchy)
+            iceCircle.Hide();
+
+        moveController.canMove = true;
+        renderer.PlayIdleDown();
+
+        OnSubmit?.Invoke(typed);
+    }
 }

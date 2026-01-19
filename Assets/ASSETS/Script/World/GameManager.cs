@@ -1,6 +1,7 @@
 ﻿using System.Collections;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -25,10 +26,29 @@ public class GameManager : MonoBehaviour
     private int enemyAlive = 0;
     private bool isSpawning = false;
 
+    [Header("Win UI")]
+    public GameObject winPanel;
+
+    [Header("Lose UI")]
+    public GameObject losePanel;
+    private bool gameEnded = false;
+
+
+
+
+
     void Start()
     {
+        HealthBar hb = FindObjectOfType<HealthBar>();
+        if (hb != null)
+            hb.OnDeath += LoseGame;
+
         wavePanel.SetActive(false);
         StartCoroutine(WaveRoutine());
+
+        winPanel.SetActive(false);
+        losePanel.SetActive(false);
+        Time.timeScale = 1f;
     }
 
     IEnumerator WaveRoutine()
@@ -48,7 +68,52 @@ public class GameManager : MonoBehaviour
         }
 
         Debug.Log("SEMUA WAVE SELESAI 🎉");
+        WinGame();
     }
+
+    void WinGame()
+    {
+        if (gameEnded) return;
+        gameEnded = true;
+
+        StartCoroutine(WinDelay());
+    }
+
+
+    IEnumerator WinDelay()
+    {
+        winPanel.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        Time.timeScale = 0f;
+    }
+
+
+
+    public void LoseGame()
+    {
+        if (gameEnded) return;
+        gameEnded = true;
+
+        StartCoroutine(LoseDelay());
+    }
+
+
+    IEnumerator LoseDelay()
+    {
+        losePanel.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        Time.timeScale = 0f;
+    }
+
+
+
+
+    public void BackToMenu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("MainMenu");
+    }
+
 
     IEnumerator SpawnWave(int amount)
     {

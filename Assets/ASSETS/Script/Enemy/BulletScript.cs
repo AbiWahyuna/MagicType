@@ -37,7 +37,7 @@ public class BulletScript : MonoBehaviour
             }
             else
             {
-                Debug.Log("HealthBar TIDAK KETEMU");
+                
             }
 
             Destroy(gameObject);

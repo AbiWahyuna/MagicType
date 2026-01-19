@@ -9,7 +9,12 @@ public class HealthBar : MonoBehaviour
     public float maxHealth = 100f;
     public float health;
 
-    private float lerpSpeed = 5f;
+    private float lerpSpeed = 10f;
+
+    [Header("LosePanel")]
+    public System.Action OnDeath;
+
+
 
     void Start()
     {
@@ -20,6 +25,8 @@ public class HealthBar : MonoBehaviour
 
         healthSlider.value = health;
         easeHealthBar.value = health;
+
+       
     }
 
     void Update()
@@ -49,13 +56,14 @@ public class HealthBar : MonoBehaviour
 
         if (health <= 0)
         {
-            Die();
+            health = 0;
+            OnDeath?.Invoke();
         }
+
     }
 
     void Die()
     {
-        // sementara
-        Destroy(gameObject);
+      
     }
 }

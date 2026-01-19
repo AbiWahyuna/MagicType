@@ -1,0 +1,1645 @@
+fileFormatVersion: 2
+guid: 4c16e1e05a0f7a7448e028d362319078
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 132
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c192c32e97b05724fa5eefe0cd924f17
+      internalID: 820104186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_1
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 180
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 815dbfa615f3b1e49a8fbfa88a02cdce
+      internalID: -1355447324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_2
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 180
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de937f0e0a068ca4898340de739d0241
+      internalID: 517532190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_3
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 180
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f2da4b85ba06a44a2cb17cd741f9dd
+      internalID: 2112213236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_4
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 204
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b636a2a7b0d43f34c907742608528493
+      internalID: 1058510824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_5
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 205
+        width: 4
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b8e31b00d4ce8247bcaded2a8e20bbd
+      internalID: 121536876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_6
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 205
+        width: 4
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dccd9656cf7abfe43b4747d9d1a951a6
+      internalID: 1279800487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_7
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 200
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 240b8914e03df4946849b2622ba56afc
+      internalID: -973779608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_8
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 217
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b897cdb5683fbb4fbf6b3653471b9aa
+      internalID: -1876807019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_9
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 217
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fbd1791eb20f314daa987d66ddfd728
+      internalID: -1193788004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_10
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 217
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba53a6e736d82544c824bde7eaaacf85
+      internalID: 2028158142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_11
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 210
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba7d897921169434c89a4257fdba9a9d
+      internalID: 342754638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_12
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 210
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a796d21043ad054b8a3b18e7dab0dae
+      internalID: -1237645773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_13
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 210
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7db286ae15794fe4abca6b3f3e10709b
+      internalID: 977404491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_14
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 203
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53af17cd39b84ee4aa5f96d9f1692077
+      internalID: -1647200177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_15
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 203
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63a12d53e5b28c1429814d896fbe9bfc
+      internalID: 1303185340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_16
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 203
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 095f7952e6a35784794ed16bc237af65
+      internalID: -1601113263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_17
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 172
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eebd3068bf86ba54a9b0ea3d013d7679
+      internalID: 472312423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_18
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 172
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc1dcc5bc3d82704eb757bded8d59dc9
+      internalID: -1440151976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_19
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 172
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c526a726e134949a360957042db2ee
+      internalID: 1534426732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_20
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 172
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c36900758af2946b17a5d08a76b55d
+      internalID: -1545212790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_21
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 148
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e321ad4e9074ab4b92835b777983a84
+      internalID: -1933258216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_22
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 148
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 798db6baaf4fc8f44bc2879549dcf483
+      internalID: -1140510335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_23
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 148
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d92f0ee6b6f67c84086bf3b0b83ab095
+      internalID: 2076825833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_24
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 138
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bc52fc818ae16148a69f23197a59b1b
+      internalID: -1961419672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_25
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 138
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95a45633e86e096438d5302cd88d1fc1
+      internalID: 1704672785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_26
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 138
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0b8d19b56cf35447825d34fb4cacab0
+      internalID: -2096628623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_27
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 138
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5e15a4423128184ca000b439f68b35e
+      internalID: -1468959909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_28
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 121
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41aa40547d8228f43802a180d5adaf2a
+      internalID: 957315449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_29
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 122
+        width: 48
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db3cc04014c19314eb814fc1dab039ca
+      internalID: -982452061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_30
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 117
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c07c8e6bbf08487478899a895b3a868b
+      internalID: -1961414983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_31
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 117
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3424b797add39dc44825cd56ff020ef3
+      internalID: -258120698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_32
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 121
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bad523efec06e94086a2f0191ac466c
+      internalID: 910402134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_33
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 121
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c71272b5ccfbe8e42a9333676bd73826
+      internalID: -1796172788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_34
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 106
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7e624e4a3b66c841a4e8dfc84e0f9d0
+      internalID: 1460727393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_35
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 106
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fb8712cbd738034a904718d62ee568d
+      internalID: 1706842879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_36
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 107
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3acb611c76c3331438232e49d345e92b
+      internalID: 864880378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_37
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 106
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 928945cf775f7c4429790fffd5ce2fc3
+      internalID: -277682539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_38
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 107
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9be29885fde9eb14b85b9421ecbace4e
+      internalID: -1038656917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_39
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 20
+        width: 96
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91d4c3d42042d02439644f441126d56d
+      internalID: -1107292295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_40
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 103
+        width: 82
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98337cf6bb83c504b8a6f5cf097d7c0e
+      internalID: -1569315895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_41
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 105
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58efc8e85f1f3054aaabd6aebd27311b
+      internalID: 9397485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_42
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 56
+        width: 96
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7369c667a97e19f4ab7322ac71eb2eb4
+      internalID: 1698581484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_43
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 105
+        width: 48
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edd8bbc1ad4d3b743b47e75fb9dbd9c8
+      internalID: 625011912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_44
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 68
+        width: 57
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 740f966105c68a1449756de89137c0b5
+      internalID: 2138626950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_45
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 68
+        width: 6
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5412a7cbe7280724f8d1d30a55e34be0
+      internalID: -1697058535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_46
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 68
+        width: 7
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20a4e149650256744a542ba55333247a
+      internalID: 2040513069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_47
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 68
+        width: 4
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 856c044d20826db4fa1e03fad24dbdbc
+      internalID: 427383124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_48
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 72
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd54c9d9a8fa696438b8be66c14f2f10
+      internalID: 1254820818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_49
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 73
+        width: 48
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e8773d75566f51448eeee680fa4bfb6
+      internalID: -1021375679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_50
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 73
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac39d4decdff6ce4587c15e378d4d395
+      internalID: -699976800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_51
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 72
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c36cf04d63f16ca44b4cef9ca498a6e8
+      internalID: 897456324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_52
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 73
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43cdbbf185116824eb65fd8c87766866
+      internalID: 879121074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_53
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 72
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17303c32d48ecd34aa1f60fc60d140dd
+      internalID: -212041900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_54
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 72
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb9f6afc329918748a76df636ce7c848
+      internalID: -1267388046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_55
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 56
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef1d310d2ebeb0a499d7692b5dd0ab0f
+      internalID: -1839531108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_56
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 56
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9361400f81be0f46b06aeaf3f82f27a
+      internalID: 917199579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_57
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 45
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f169fa9729a2e4a91b840eddc9bc99
+      internalID: 520854126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_58
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 52
+        width: 46
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf49be8db9c299b40a01fc8939c5d58d
+      internalID: 1654170103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_59
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 36
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: effdd16197d79d745b4201f80e04d15e
+      internalID: -1897310962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_60
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 4
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf317ccd4dcb324f88cdd357effcd15
+      internalID: 1164519789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_61
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 45
+        width: 48
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a74dcaf33effa1a458c079b4fb12a15c
+      internalID: 56129543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_62
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 42
+        width: 40
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8bd47fa22ee4fe4c9dfe92af019f5a0
+      internalID: -1230486089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_63
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 29
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17c8ba1503f4c8b488a5c643c0f379df
+      internalID: 977820833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_64
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 30
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 113cd0cf9c8137c40af1b6338cedc39a
+      internalID: -1185171940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_65
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 36
+        width: 46
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e047fbf064ef9f04ab0b4c836fbff236
+      internalID: -217795852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_66
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 21
+        width: 96
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62a3e99281ceb2c459c3cf84701a28aa
+      internalID: 877811816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_67
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 5
+        width: 48
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b724c4075379ca4494b885059f10975
+      internalID: -949596013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoyalBlueUISheet_68
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 10
+        width: 44
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11502f3105f8a52418abc233dfb39c29
+      internalID: -1632549515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      RoyalBlueUISheet_0: 820104186
+      RoyalBlueUISheet_1: -1355447324
+      RoyalBlueUISheet_10: 2028158142
+      RoyalBlueUISheet_11: 342754638
+      RoyalBlueUISheet_12: -1237645773
+      RoyalBlueUISheet_13: 977404491
+      RoyalBlueUISheet_14: -1647200177
+      RoyalBlueUISheet_15: 1303185340
+      RoyalBlueUISheet_16: -1601113263
+      RoyalBlueUISheet_17: 472312423
+      RoyalBlueUISheet_18: -1440151976
+      RoyalBlueUISheet_19: 1534426732
+      RoyalBlueUISheet_2: 517532190
+      RoyalBlueUISheet_20: -1545212790
+      RoyalBlueUISheet_21: -1933258216
+      RoyalBlueUISheet_22: -1140510335
+      RoyalBlueUISheet_23: 2076825833
+      RoyalBlueUISheet_24: -1961419672
+      RoyalBlueUISheet_25: 1704672785
+      RoyalBlueUISheet_26: -2096628623
+      RoyalBlueUISheet_27: -1468959909
+      RoyalBlueUISheet_28: 957315449
+      RoyalBlueUISheet_29: -982452061
+      RoyalBlueUISheet_3: 2112213236
+      RoyalBlueUISheet_30: -1961414983
+      RoyalBlueUISheet_31: -258120698
+      RoyalBlueUISheet_32: 910402134
+      RoyalBlueUISheet_33: -1796172788
+      RoyalBlueUISheet_34: 1460727393
+      RoyalBlueUISheet_35: 1706842879
+      RoyalBlueUISheet_36: 864880378
+      RoyalBlueUISheet_37: -277682539
+      RoyalBlueUISheet_38: -1038656917
+      RoyalBlueUISheet_39: -1107292295
+      RoyalBlueUISheet_4: 1058510824
+      RoyalBlueUISheet_40: -1569315895
+      RoyalBlueUISheet_41: 9397485
+      RoyalBlueUISheet_42: 1698581484
+      RoyalBlueUISheet_43: 625011912
+      RoyalBlueUISheet_44: 2138626950
+      RoyalBlueUISheet_45: -1697058535
+      RoyalBlueUISheet_46: 2040513069
+      RoyalBlueUISheet_47: 427383124
+      RoyalBlueUISheet_48: 1254820818
+      RoyalBlueUISheet_49: -1021375679
+      RoyalBlueUISheet_5: 121536876
+      RoyalBlueUISheet_50: -699976800
+      RoyalBlueUISheet_51: 897456324
+      RoyalBlueUISheet_52: 879121074
+      RoyalBlueUISheet_53: -212041900
+      RoyalBlueUISheet_54: -1267388046
+      RoyalBlueUISheet_55: -1839531108
+      RoyalBlueUISheet_56: 917199579
+      RoyalBlueUISheet_57: 520854126
+      RoyalBlueUISheet_58: 1654170103
+      RoyalBlueUISheet_59: -1897310962
+      RoyalBlueUISheet_6: 1279800487
+      RoyalBlueUISheet_60: 1164519789
+      RoyalBlueUISheet_61: 56129543
+      RoyalBlueUISheet_62: -1230486089
+      RoyalBlueUISheet_63: 977820833
+      RoyalBlueUISheet_64: -1185171940
+      RoyalBlueUISheet_65: -217795852
+      RoyalBlueUISheet_66: 877811816
+      RoyalBlueUISheet_67: -949596013
+      RoyalBlueUISheet_68: -1632549515
+      RoyalBlueUISheet_7: -973779608
+      RoyalBlueUISheet_8: -1876807019
+      RoyalBlueUISheet_9: -1193788004
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

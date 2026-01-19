@@ -11,6 +11,11 @@ public class SpellManager : MonoBehaviour
     public IsometricPlayerMovementController moveController;
     public Animator playerAnimator;
 
+    [Header("Visual")]
+    public SpriteRenderer playerSprite;
+    public Color stunColor = new Color(1f, 0.66f, 0f); // FFA900
+
+
     private bool isCasting = false;
     private float spellCooldownTimer = 0f;
 
@@ -76,7 +81,16 @@ public class SpellManager : MonoBehaviour
 
     IEnumerator StunRoutine(float duration)
     {
+        Color originalColor = playerSprite.color;
+
+        // kena stun → warna berubah
+        playerSprite.color = stunColor;
+
         yield return new WaitForSeconds(duration);
+
+        // stun selesai → warna balik
+        playerSprite.color = originalColor;
         moveController.canMove = true;
     }
+
 }

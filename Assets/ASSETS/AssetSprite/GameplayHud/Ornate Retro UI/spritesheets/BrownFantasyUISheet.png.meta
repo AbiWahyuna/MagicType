@@ -1,0 +1,1645 @@
+fileFormatVersion: 2
+guid: 5d27706e09b337346bb8f92558521292
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 132
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4f1e6d113782ad4b94f02111e5d4be3
+      internalID: 410521404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_1
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 180
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98f15f6791dd9f344949c15a69965df0
+      internalID: -639698594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_2
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 180
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d3f2aed421d3cb40b60405185311a02
+      internalID: 1421524034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_3
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 180
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfd34357c452ffc40b6cba295f04772b
+      internalID: -1265639976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_4
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 204
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a6bc2d24e145747a9871add7c1b699
+      internalID: 825407798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_5
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 205
+        width: 4
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01da3365aa8d4aa4881c0818017601a6
+      internalID: -715341726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_6
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 205
+        width: 4
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abd02a46e99893849a944ea5e9cbdc3d
+      internalID: 1615407951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_7
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 200
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0ddba89c7be0234c98338f6dd2a3e64
+      internalID: -1390139409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_8
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 217
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbd18105f77135a4d9053be0487f3085
+      internalID: -1669453242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_9
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 217
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb39320808f86d4fb014b59ede3e2e6
+      internalID: -745055784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_10
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 217
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9860978b60b2b1347a792fb8e947faad
+      internalID: 1017417902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_11
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 210
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e2f7ce1ccfd1e54b8e40ed31d40c243
+      internalID: -432683439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_12
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 210
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ec6dca800e93264294f7a5271bd1340
+      internalID: 1733861943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_13
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 210
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0a255d2bf107554ab456b10211726fd
+      internalID: -679510590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_14
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 203
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1bf15a78af180a49a55342d1a443473
+      internalID: 1056553938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_15
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 203
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8b7dbdac1c53084ba89bc6f46caf976
+      internalID: 734796086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_16
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 203
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad03363da2eb61b4196bf986c72167bd
+      internalID: -1497864375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_17
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 172
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 319266105964f2e4abb03995e517b4a2
+      internalID: 546156446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_18
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 172
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b7983577ce475d41a733dbe4efd219f
+      internalID: 1156208851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_19
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 172
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf55248a054f0b42bdf5b157076c306
+      internalID: -206778400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_20
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 172
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a022e13580b97541bdee9ec4052999b
+      internalID: 742760094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_21
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 148
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76f3d1ab01edbae43ad04e8aa0a35056
+      internalID: 106027798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_22
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 148
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b2f877d2c77b62479ebf5ca24ec30f1
+      internalID: -1862948313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_23
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 148
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76b0b91d2984b4e4d81ea1e3f9e1266a
+      internalID: -44703833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_24
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 138
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 175422d27e5980d4f82fc098fab52ded
+      internalID: -2055562282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_25
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 138
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a4bd62d9a4f0347aaf74bb1368d6cb
+      internalID: -1307854878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_26
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 138
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c838aab6887eb664791f7a07004bd2c8
+      internalID: -785740169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_27
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 138
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a3b2fa20dd795e47a510c81f9d2aadb
+      internalID: 1993760503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_28
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 121
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bcb95d7a96be1c4fb9c79e5fee21d68
+      internalID: 1445377878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_29
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 122
+        width: 48
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b992b2e9f78d344a9feaa77608119c7
+      internalID: 775603792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_30
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 117
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ca0f02ab9e105346adb850583dee5eb
+      internalID: 831985623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_31
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 117
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d974e41276d3a664eb1fd0e4ef4eaa00
+      internalID: 1543544358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_32
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 121
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67b5121bec926cb4da5473f41e21450a
+      internalID: 1161961304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_33
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 121
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d6a1a1ca39e74245868a3c1dbe93f8f
+      internalID: 744005830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_34
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 106
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f95cf1cb1ca0594980c69a1b8c37542
+      internalID: 958854275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_35
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 106
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b513350660a9e64480541e8be0e5d2b
+      internalID: -901944879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_36
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 107
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 389e391fc8bb0fe43a28c59d7c96ae5e
+      internalID: -230698277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_37
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 106
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62b70e12515c2484583b07ef6b1ed41d
+      internalID: -1507181628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_38
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 107
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9943621d0a76dac409ff7debefb0f287
+      internalID: 516789123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_39
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 20
+        width: 96
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dc19e9445c8d18439cc2dea3dc26e87
+      internalID: 542421975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_40
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 103
+        width: 82
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a5d74e5c440b5458f6b3418dfcefcf
+      internalID: -601581892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_41
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 105
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b27d3ce4ea5c734296392c86bd2268c
+      internalID: 1308615845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_42
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 56
+        width: 96
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c8bc1675b8e2a94ebbfb52dda4b1d8c
+      internalID: -634909783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_43
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 105
+        width: 48
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c77b5e06253cc4d963292b0391ee09
+      internalID: -807339669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_44
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 68
+        width: 57
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a42186d59afa3f419c68c4a1cbba50f
+      internalID: -1645944332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_45
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 68
+        width: 6
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c789c2f51623414997ebf2b6fdee967
+      internalID: -206032357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_46
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 68
+        width: 7
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5788a17b518188842a2234a4c232109c
+      internalID: 1942889234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_47
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 68
+        width: 4
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc4f541573c56284d89d94e283e24b7d
+      internalID: -1267159817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_48
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 72
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2055fbbec290aef43b3f887093ca65e9
+      internalID: 38546192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_49
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 73
+        width: 48
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1f99046176b688428e1b62e425c3c01
+      internalID: 480263077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_50
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 73
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8726d5ad6575c0741ad06c2746b31ac8
+      internalID: -450532465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_51
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 72
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7c8257ddc0bee440a15f411a510e9a2
+      internalID: -1124485223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_52
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 73
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b14937ffafb1774097d63eb39cb41ac
+      internalID: 226057019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_53
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 72
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f93bf2b45973514b837a05e3ea47f80
+      internalID: 1758963073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_54
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 72
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd2db07d78859c4d9bf141301ca6991
+      internalID: -1116157236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_55
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 56
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab443af9b8b14384bad714ec80501ff2
+      internalID: -55201474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_56
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 56
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71b81fd9e93915a4aadd4703ae6b919e
+      internalID: 228957365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_57
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 45
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3eb8bafd6861ad46b57da1c27244ba8
+      internalID: -1924317421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_58
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 52
+        width: 46
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12565705d3305b44f85885948ccbd54f
+      internalID: -1321247333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_59
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 36
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b6dede5f49bc734c844f8ebf164ef90
+      internalID: -642414922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_60
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 4
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec67c88d78df2643b390fd40ccc5906
+      internalID: -1937396821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_61
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 45
+        width: 48
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea351b54567d22a458108b1eeda65893
+      internalID: 1319218740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_62
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 42
+        width: 40
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c2710e05908383459ef2655ca02f260
+      internalID: 437560558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_63
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 29
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8df500c0aad7b5c4ead52c0d1028d0f1
+      internalID: 358467765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_64
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 30
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca7920ed9c545ca40b3d3c8480c40b0d
+      internalID: -673962683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_65
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 36
+        width: 46
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21370a2f7c214ee4d83afe1c912903c9
+      internalID: -1116953235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_66
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 21
+        width: 96
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e0f5302b9ce972458b530ac2fe8d639
+      internalID: 584610176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_67
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 5
+        width: 48
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dd4c779d1ca95e49ac96e6186e6d41c
+      internalID: -2130807168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownFantasyUISheet_68
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 10
+        width: 44
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc928db34b8173541b0a0affcf7ca2f5
+      internalID: -239501874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      BrownFantasyUISheet_0: 410521404
+      BrownFantasyUISheet_1: -639698594
+      BrownFantasyUISheet_10: 1017417902
+      BrownFantasyUISheet_11: -432683439
+      BrownFantasyUISheet_12: 1733861943
+      BrownFantasyUISheet_13: -679510590
+      BrownFantasyUISheet_14: 1056553938
+      BrownFantasyUISheet_15: 734796086
+      BrownFantasyUISheet_16: -1497864375
+      BrownFantasyUISheet_17: 546156446
+      BrownFantasyUISheet_18: 1156208851
+      BrownFantasyUISheet_19: -206778400
+      BrownFantasyUISheet_2: 1421524034
+      BrownFantasyUISheet_20: 742760094
+      BrownFantasyUISheet_21: 106027798
+      BrownFantasyUISheet_22: -1862948313
+      BrownFantasyUISheet_23: -44703833
+      BrownFantasyUISheet_24: -2055562282
+      BrownFantasyUISheet_25: -1307854878
+      BrownFantasyUISheet_26: -785740169
+      BrownFantasyUISheet_27: 1993760503
+      BrownFantasyUISheet_28: 1445377878
+      BrownFantasyUISheet_29: 775603792
+      BrownFantasyUISheet_3: -1265639976
+      BrownFantasyUISheet_30: 831985623
+      BrownFantasyUISheet_31: 1543544358
+      BrownFantasyUISheet_32: 1161961304
+      BrownFantasyUISheet_33: 744005830
+      BrownFantasyUISheet_34: 958854275
+      BrownFantasyUISheet_35: -901944879
+      BrownFantasyUISheet_36: -230698277
+      BrownFantasyUISheet_37: -1507181628
+      BrownFantasyUISheet_38: 516789123
+      BrownFantasyUISheet_39: 542421975
+      BrownFantasyUISheet_4: 825407798
+      BrownFantasyUISheet_40: -601581892
+      BrownFantasyUISheet_41: 1308615845
+      BrownFantasyUISheet_42: -634909783
+      BrownFantasyUISheet_43: -807339669
+      BrownFantasyUISheet_44: -1645944332
+      BrownFantasyUISheet_45: -206032357
+      BrownFantasyUISheet_46: 1942889234
+      BrownFantasyUISheet_47: -1267159817
+      BrownFantasyUISheet_48: 38546192
+      BrownFantasyUISheet_49: 480263077
+      BrownFantasyUISheet_5: -715341726
+      BrownFantasyUISheet_50: -450532465
+      BrownFantasyUISheet_51: -1124485223
+      BrownFantasyUISheet_52: 226057019
+      BrownFantasyUISheet_53: 1758963073
+      BrownFantasyUISheet_54: -1116157236
+      BrownFantasyUISheet_55: -55201474
+      BrownFantasyUISheet_56: 228957365
+      BrownFantasyUISheet_57: -1924317421
+      BrownFantasyUISheet_58: -1321247333
+      BrownFantasyUISheet_59: -642414922
+      BrownFantasyUISheet_6: 1615407951
+      BrownFantasyUISheet_60: -1937396821
+      BrownFantasyUISheet_61: 1319218740
+      BrownFantasyUISheet_62: 437560558
+      BrownFantasyUISheet_63: 358467765
+      BrownFantasyUISheet_64: -673962683
+      BrownFantasyUISheet_65: -1116953235
+      BrownFantasyUISheet_66: 584610176
+      BrownFantasyUISheet_67: -2130807168
+      BrownFantasyUISheet_68: -239501874
+      BrownFantasyUISheet_7: -1390139409
+      BrownFantasyUISheet_8: -1669453242
+      BrownFantasyUISheet_9: -745055784
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

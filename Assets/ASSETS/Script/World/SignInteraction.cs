@@ -66,4 +66,17 @@ public class SignInteraction : MonoBehaviour
         signPanel.SetActive(false);
         panelOpen = false;
     }
+
+    public void TogglePanelButton()
+    {
+        if (panelOpen)
+        {
+            ClosePanel();
+        }
+        else if (playerInRange)
+        {
+            OpenPanel();
+        }
+    }
+
 }

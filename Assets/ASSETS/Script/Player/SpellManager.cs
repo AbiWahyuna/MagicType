@@ -14,6 +14,8 @@ public class SpellManager : MonoBehaviour
     [Header("Visual")]
     public SpriteRenderer playerSprite;
     public Color stunColor = new Color(1f, 0.66f, 0f); // FFA900
+    public bool IsStunned { get; private set; }
+
 
 
     private bool isCasting = false;
@@ -69,12 +71,17 @@ public class SpellManager : MonoBehaviour
 
         isCasting = true;
         spellCooldownTimer = spell.cooldown;
+
+        moveController.canMove = true;
     }
 
 
 
     public void Stun(float duration)
     {
+        if (IsStunned) return;
+
+        IsStunned = true;
         moveController.canMove = false;
         StartCoroutine(StunRoutine(duration));
     }
@@ -82,15 +89,14 @@ public class SpellManager : MonoBehaviour
     IEnumerator StunRoutine(float duration)
     {
         Color originalColor = playerSprite.color;
-
-        // kena stun → warna berubah
         playerSprite.color = stunColor;
 
         yield return new WaitForSeconds(duration);
 
-        // stun selesai → warna balik
         playerSprite.color = originalColor;
+        IsStunned = false;
         moveController.canMove = true;
     }
+
 
 }

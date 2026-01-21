@@ -13,13 +13,30 @@ public class TypingSystem : MonoBehaviour
     [Header("Magic Circles")]
     public MagicCircle fireCircle;
     public MagicCircle iceCircle;
+    public MagicCircle comboCircle; // UNGU
+
+
 
     public bool typingMode = false;
 
-    // 🔑 mode terakhir yang VALID
     private bool iceMode = false;
 
+    // COMBO
+    private bool comboMode = false;
+    private bool firstWasIce = false;
+
     public System.Action<string> OnSubmit;
+
+    [Header("Combo Skill")]
+    public GameObject comboSkillPrefab;
+    public Transform castPoint;
+
+    [Header("References")]
+    public SpellManager spellManager;
+
+
+
+
 
     void Awake()
     {
@@ -35,11 +52,20 @@ public class TypingSystem : MonoBehaviour
     {
         if (!typingMode && Input.GetKeyDown(KeyCode.Return))
         {
+            if (spellManager != null && spellManager.IsStunned)
+                return;
+
             StartTyping();
         }
+
         else if (typingMode && Input.GetKeyDown(KeyCode.Return))
         {
             SubmitTyping();
+        }
+
+        if (typingMode && Input.GetKeyDown(KeyCode.Tab))
+        {
+            StartCombo();
         }
     }
 
@@ -54,82 +80,191 @@ public class TypingSystem : MonoBehaviour
         moveController.canMove = false;
         renderer.PlayCasting();
 
-        // 🔥❄️ AKTIFKAN MODE TERAKHIR
-        if (iceMode)
-        {
-            if (fireCircle.gameObject.activeInHierarchy)
-                fireCircle.Hide();
-
-            iceCircle.gameObject.SetActive(true);
-            iceCircle.Show();
-        }
-        else
-        {
-            if (iceCircle.gameObject.activeInHierarchy)
-                iceCircle.Hide();
-
-            fireCircle.gameObject.SetActive(true);
-            fireCircle.Show();
-        }
+        ShowSingleCircle();
     }
 
-    // REAL-TIME SWITCH
     void OnTypingChanged(string value)
     {
         if (!typingMode) return;
 
         string typed = value.ToLower().Trim();
 
-        if (typed == "glaciafall")
+        // ===== SINGLE MODE =====
+        if (!comboMode)
         {
-            if (!iceMode)
-            {
-                iceMode = true;
-
-                if (fireCircle.gameObject.activeInHierarchy)
-                    fireCircle.Hide();
-
-                iceCircle.gameObject.SetActive(true);
-                iceCircle.Show();
-            }
-        }
-        else if (typed == "fireball")
-        {
-            if (iceMode)
+            if (typed == "fireball")
             {
                 iceMode = false;
-
-                if (iceCircle.gameObject.activeInHierarchy)
-                    iceCircle.Hide();
-
-                fireCircle.gameObject.SetActive(true);
-                fireCircle.Show();
+                ShowFire();
             }
+            else if (typed == "glaciafall")
+            {
+                iceMode = true;
+                ShowIce();
+            }
+
+            return;
+        }
+
+        // ===== COMBO MODE =====
+        // hanya jika spell ke-2 adalah KEBALIKAN
+        if (typed == "fireball" && firstWasIce)
+        {
+            ShowCombo();
+        }
+        else if (typed == "glaciafall" && !firstWasIce)
+        {
+            ShowCombo();
         }
     }
 
+    void StartCombo()
+    {
+        string typed = inputField.text.ToLower().Trim();
+
+        if (typed != "fireball" && typed != "glaciafall")
+            return;
+
+        // cast spell pertama
+        OnSubmit?.Invoke(typed);
+
+        comboMode = true;
+        firstWasIce = (typed == "glaciafall");
+
+        inputField.text = "";
+        inputField.ActivateInputField();   // penting
+        moveController.canMove = false;
+    }
+
+
+
     void SubmitTyping()
     {
-        typingMode = false;
-
         string typed = inputField.text.ToLower().Trim();
+
+        typingMode = false;
         inputField.gameObject.SetActive(false);
 
-        // 🔑 KUNCI MODE TERAKHIR DARI INPUT
-        if (typed == "glaciafall")
-            iceMode = true;
-        else if (typed == "fireball")
-            iceMode = false;
+        // ❌ cancel total (ESC logic)
+        if (string.IsNullOrEmpty(typed))
+        {
+            comboMode = false;
+            inputField.text = "";
+            renderer.PlayIdleDown();
+            HideAll();
+            moveController.canMove = true;
+            return;
+        }
 
+        // 🔮 COMBO
+        if (comboMode)
+        {
+            // ❌ spell ke-2 SALAH → biar SpellManager yang stun
+            if (!IsValidComboSecondSpell(typed))
+            {
+                OnSubmit?.Invoke(typed); // ini bakal masuk TryCast → STUN
+                ResetAll();
+                return;
+            }
+
+            // ✅ spell ke-2 BENAR → cast combo
+            CastCombo();
+            ResetAll();
+            moveController.canMove = true;
+            return;
+        }
+
+
+        // 🔥 NORMAL / TYPO → biar SpellManager yang tentukan
+        OnSubmit?.Invoke(typed);
+
+        ResetAll();
+        // ❗ JANGAN set canMove di sini
+    }
+
+
+
+
+    void CastCombo()
+    {
+        HideAll();
+
+        if (comboSkillPrefab != null && castPoint != null)
+        {
+            Instantiate(
+                comboSkillPrefab,
+                castPoint.position,
+                Quaternion.identity
+            );
+        }
+        else
+        {
+            Debug.LogWarning("Combo prefab / castPoint belum di-set!");
+        }
+    }
+
+    bool IsValidComboSecondSpell(string typed)
+    {
+        if (firstWasIce && typed == "fireball")
+            return true;
+
+        if (!firstWasIce && typed == "glaciafall")
+            return true;
+
+        return false;
+    }
+
+
+
+    // ===== VISUAL HELPERS =====
+
+    void ShowSingleCircle()
+    {
+        if (iceMode)
+            ShowIce();
+        else
+            ShowFire();
+    }
+
+    void ShowFire()
+    {
+        HideAll();
+        fireCircle.gameObject.SetActive(true);
+        fireCircle.Show();
+    }
+
+    void ShowIce()
+    {
+        HideAll();
+        iceCircle.gameObject.SetActive(true);
+        iceCircle.Show();
+    }
+
+    void ShowCombo()
+    {
+        HideAll();
+        comboCircle.gameObject.SetActive(true);
+        comboCircle.Show();
+    }
+
+    void HideAll()
+    {
         if (fireCircle.gameObject.activeInHierarchy)
             fireCircle.Hide();
 
         if (iceCircle.gameObject.activeInHierarchy)
             iceCircle.Hide();
 
-        moveController.canMove = true;
-        renderer.PlayIdleDown();
+        if (comboCircle.gameObject.activeInHierarchy)
+            comboCircle.Hide();
+    }
 
-        OnSubmit?.Invoke(typed);
+    void ResetAll()
+    {
+        comboMode = false;
+        HideAll();
+
+        
+        renderer.PlayIdleDown();
     }
 }

@@ -7,6 +7,8 @@ public class MagicCircle : MonoBehaviour
     public ParticleSystem[] particles;
     public Transform rotatePivot;
     public GameObject lightRoot;
+    public Animator lightAnimator;
+
     // 🔥 GameObject khusus light
     public Light2D circleLight;
 
@@ -37,7 +39,10 @@ public class MagicCircle : MonoBehaviour
         gameObject.SetActive(true);
 
         if (lightRoot != null)
-            lightRoot.SetActive(true);   // 💡 baru nyala di sini
+        {
+            lightRoot.SetActive(true);
+            lightAnimator.Play("FadeLight");
+        }
 
         StopAllCoroutines();
         StartCoroutine(ScaleRoutine(0f, 1f));
@@ -46,14 +51,20 @@ public class MagicCircle : MonoBehaviour
             ps.Play();
     }
 
+
     public void Hide()
     {
+        if (lightAnimator != null)
+            lightAnimator.Play("Light_Close");
+            lightAnimator.Play("SmallLightClose");
+
         StopAllCoroutines();
         StartCoroutine(ScaleRoutine(1f, 0f));
 
         foreach (var ps in particles)
             ps.Stop();
     }
+
 
     private IEnumerator ScaleRoutine(float from, float to)
     {

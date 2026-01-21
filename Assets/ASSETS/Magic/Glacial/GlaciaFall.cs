@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 public class Glaciafall : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class Glaciafall : MonoBehaviour
     [Header("Damage")]
     public int damage = 30;
     public float lifeTime = 1.2f;
+
+    private HashSet<EnemyHealth> damagedEnemies = new HashSet<EnemyHealth>();
 
     void Start()
     {
@@ -23,15 +26,19 @@ public class Glaciafall : MonoBehaviour
         // TELEPORT KE MUSUH
         transform.position = target.position;
 
-        // DAMAGE LANGSUNG
-        EnemyHealth hp = target.GetComponent<EnemyHealth>();
-        if (hp != null)
+        Destroy(gameObject, lifeTime);
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (!other.CompareTag("Enemy")) return;
+
+        EnemyHealth hp = other.GetComponent<EnemyHealth>();
+        if (hp != null && !damagedEnemies.Contains(hp))
         {
             hp.TakeDamage(damage);
+            damagedEnemies.Add(hp);
         }
-
-        // AUTO DESTROY
-        Destroy(gameObject, lifeTime);
     }
 
     Transform FindNearestEnemy()
